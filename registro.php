@@ -28,8 +28,7 @@
 		            <!--      Wizard container        -->
 		            <div class="wizard-container">
 		                <div class="card wizard-card" data-color="orange" id="wizardProfile">
-		                    <form action="" method="">
-		                		<!--        You can switch " data-color="orange" "  with one of the next bright colors: "blue", "green", "orange", "red", "azure"          -->
+		                    <form action="auth/registrar.php" method="POST">
 		                    	<div class="wizard-header text-center">
 		                        	<h3 class="wizard-title">Crea tu perfil PAMI</h3>
 									<p class="category">En 3 Pasos completa tu registro a PAMI Adan.</p>
@@ -74,7 +73,7 @@
 												<div class="picture-container">
 													<div class="picture">
 														<img src="assets/img/default-avatar.jpg" class="picture-src" id="wizardPicturePreview" title="" />
-														<input type="file" id="wizard-picture">
+														<input type="file" id="userpicture">
 													</div>
 													<h6>Elegir Imagen</h6>
 												</div>
@@ -89,10 +88,19 @@
 													<input name="lastname" type="text" class="form-control" placeholder="Apellido...">
 												</div>
 											</div>
+											<div class="col-sm-10">
+												<h5 class="info-text">Datos de Accesso</h5>
+											</div>
 											<div class="col-sm-10 col-sm-offset-1">
 												<div class="form-group">
 													<label>Email <small>(requerido)</small></label>
 													<input name="email" type="email" class="form-control" placeholder="nombre@dominio.com">
+												</div>
+											</div>
+											<div class="col-sm-10 col-sm-offset-1">
+												<div class="form-group">
+													<label>Password <small>(requerido)</small></label>
+													<input name="password" type="password" class="form-control">
 												</div>
 											</div>
 										</div>
@@ -254,7 +262,7 @@
 													<option value="CN">China</option>
 													<option value="CY">Chipre</option>
 													<option value="VA">Ciudad del Vaticano (Santa Sede)</option>
-													<option value="CO">Colombia</option>
+													<option value="CO" selected>Colombia</option>
 													<option value="KM">Comores</option>
 													<option value="CG">Congo</option>
 													<option value="CD">Congo, República Democrática del</option>
@@ -273,7 +281,7 @@
 													<option value="AE">Emiratos Árabes Unidos</option>
 													<option value="ER">Eritrea</option>
 													<option value="SI">Eslovenia</option>
-													<option value="ES" selected>España</option>
+													<option value="ES">España</option>
 													<option value="US">Estados Unidos</option>
 													<option value="EE">Estonia</option>
 													<option value="ET">Etiopía</option>
