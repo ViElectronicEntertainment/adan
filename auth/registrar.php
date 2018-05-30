@@ -1,13 +1,16 @@
 <?php
 $server = "localhost";
-$user = "root";
+$user = "root"; 
 $pass = "";
-$bd = "adan";
+$bd = "example";
 
 $email=$_REQUEST['email'];
-$password=$_REQUEST[''];
-$nombreimg=$_FILES['imagen']['name'];//Nombre
-$archivo=$_FILES['imagen']['tmp_name'];//Archivo
+$password=$_REQUEST['password'];
+$hash = password_hash($password, PASSWORD_BCRYPT);
+$name=$_REQUEST['name'];
+$lastname=$_REQUEST['lastname'];
+$nombreimg=$_FILES['userpicture']['name'];//Nombre
+$archivo=$_FILES['userpicture']['tmp_name'];//Archivo
 $ruta="img";
 $ruta=$ruta."/".$nombreimg; //ruta del archivo
 move_uploaded_file($archivo, $ruta);
@@ -15,7 +18,7 @@ $conex=mysqli_connect($server,$user,$pass,$bd);
  if (!$conex) {
   die("Error: ".mysqli_connect_error());
  }
-$query = "insert into productos values('','".$producto."','".$ruta."')";
+$query = "insert into users values('".$email."','".$hash."','".$name."','".$lastname."','".$ruta."',NOW())";
 if(mysqli_query($conex, $query))
 {
 	echo "Insertado Correctamente";
