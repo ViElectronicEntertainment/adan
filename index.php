@@ -26,7 +26,7 @@
 
 <body>
     <div class="container">
-        <form action="auth/registrar.php" method="POST">
+        <form action="auth/registrar.php" method="POST" enctype="multipart/form-data">
             <div class="wizard-header text-center">
                 <h3 class="wizard-title">Crea tu perfil PAMI</h3>
             </div>
@@ -36,7 +36,7 @@
                     <div class="picture-container">
                         <div class="picture">
                             <img src="assets/img/default-avatar.jpg" class="picture-src" id="wizardPicturePreview" title="" />
-                            <input type="file" id="userpicture" name="userpicture">
+                            <input type="file" id="userpicture" name="img">
                         </div>
                         <h6>Elegir Imagen</h6>
                     </div>
@@ -44,11 +44,11 @@
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label>Nombre <small>(requerido)</small></label>
-                        <input name="name" type="text" class="form-control" placeholder="Nombre...">
+                        <input name="name" type="text" class="form-control" placeholder="Nombre..." required>
                     </div>
                     <div class="form-group">
                         <label>Apellido <small>(requerido)</small></label>
-                        <input name="lastname" type="text" class="form-control" placeholder="Apellido...">
+                        <input name="lastname" type="text" class="form-control" placeholder="Apellido..." required>
                     </div>
                 </div>
                 <div class="col-sm-10">
@@ -57,13 +57,13 @@
                 <div class="col-sm-10 col-sm-offset-1">
                     <div class="form-group">
                         <label>Email <small>(requerido)</small></label>
-                        <input name="email" type="email" class="form-control" placeholder="nombre@dominio.com">
+                        <input name="email" type="email" class="form-control" placeholder="nombre@dominio.com" required>
                     </div>
                 </div>
                 <div class="col-sm-10 col-sm-offset-1">
                     <div class="form-group">
                         <label>Password <small>(requerido)</small></label>
-                        <input name="password" type="password" class="form-control">
+                        <input name="password" type="password" class="form-control" required>
                     </div>
                 </div>
             </div>
