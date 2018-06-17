@@ -44,15 +44,11 @@
 Todos los cambios notables de este proyecto estan documentadas en este archivo.
 //Ejemplo
 
-## [version estable.v-beta.v-alpha.cambio menor] - año-mes-dia
-### New!
-### Changed
+## [0.0.0.2c] - 2018-06-17
+-- 
+
 ### Fixed
-### Added
-### Removed
-### Update
-### Optimization
-### Fixed
+-- Simplificacion del codigo
 
 --
 

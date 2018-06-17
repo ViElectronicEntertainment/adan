@@ -26,7 +26,7 @@
 
 <body>
     <div class="container">
-        <form action="auth/registrar.php" method="POST" enctype="multipart/form-data">
+        <form action="registrar.php" method="post" enctype="multipart/form-data">
             <div class="wizard-header text-center">
                 <h3 class="wizard-title">Crea tu perfil PAMI</h3>
             </div>
@@ -36,7 +36,7 @@
                     <div class="picture-container">
                         <div class="picture">
                             <img src="assets/img/default-avatar.jpg" class="picture-src" id="wizardPicturePreview" title="" />
-                            <input type="file" id="userpicture" name="img">
+                            <input type="file" id="userpicture" name="imagen">
                         </div>
                         <h6>Elegir Imagen</h6>
                     </div>
