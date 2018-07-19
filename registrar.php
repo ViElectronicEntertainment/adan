@@ -35,36 +35,36 @@ $skill1 = $_REQUEST['skill1'];
 $skill2 = $_REQUEST['skill2'];
 $skill3 = $_REQUEST['skill3'];
 //Primera Habilidad
-if ($skill1 == "leadership") {
+if ($skill1 == "leadership" || $skill2 =="leadership" || $skill3 == "leadership"){
 	$leadership = $leadership + 1;
 }
-	elseif ($skill1 == "innovation") {
-		$innovation = $innovation + 1;
-	}
-	elseif ($skill1 == "teamwork") {
-		$teamwork = $teamwork +1;
-	}
-	elseif ($skill1 == "management") {
-		$management = $management +1;
-	}
-	elseif ($skill1 == "design") {
-		$design = $design +1;
-	}
-	elseif ($skill1 == "development") {
-		$development = $development +1;
-	}
-	elseif ($skill1 == "problemresolution") {
-		$problemresolution = $problemresolution +1;
-	}
-	elseif ($skill1 == "sales") {
-		$sales = $sales +1;
-	}
-	elseif ($skill1 == "communication") {
-		$communication = $communication +1;
-	}
-	elseif ($skill1 == "community") {
-		$community = $community +1;
-	}
+if ($skill1 == "innovation") {
+	$innovation = $innovation + 1;
+}
+if ($skill1 == "teamwork") {
+	$teamwork = $teamwork +1;
+}
+if ($skill1 == "management") {
+	$management = $management +1;
+}
+if ($skill1 == "design") {
+	$design = $design +1;
+}
+if ($skill1 == "development") {
+	$development = $development +1;
+}
+if ($skill1 == "problemresolution") {
+	$problemresolution = $problemresolution +1;
+}
+if ($skill1 == "sales") {
+	$sales = $sales +1;
+}
+if ($skill1 == "communication") {
+	$communication = $communication +1;
+}
+if ($skill1 == "community") {
+	$community = $community +1;
+}
 //Segunda Habilidad
 if ($skill2 == "leadership") {
 	$leadership = $leadership + 1;
@@ -158,7 +158,7 @@ $query = "insert into usuarios values(
 if(mysqli_query($conex, $query))
 {
 	echo "Registrado Correctamente";
-	echo '<a href="index.php">Registrar Otro</a>'; 
+	echo '<a href="index.html">Registrar Otro</a>'; 
 }
 else{
 	echo "Error: ".mysqli_error($conex);

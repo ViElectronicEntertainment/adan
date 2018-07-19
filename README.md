@@ -42,8 +42,7 @@
 					▀▀▀▀▀▀▀▀▀▀			
 
 Todos los cambios notables de este proyecto estan documentadas en este archivo.
-
--- 
+ 
 ## [0.0.0.3] - 2018-06-17
 
 ### Added
@@ -56,17 +55,13 @@ Todos los cambios notables de este proyecto estan documentadas en este archivo.
 - Usuario 1 = PAMI, tiene ahora contraseña cifrada
 - Reparacion de errores conocidos
 
---
-
 ## [0.0.0.2c] - 2018-06-17
 
 ### Fixed
 - Simplificacion del codigo
 
---
-
 ## [0.0.0.2b] - 2018-06-15
---
+- Correcion de errores conocidos
 
 ### Fixed
 - Registro corregido, los campos ahora funcionan!!
